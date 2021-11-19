@@ -124,7 +124,7 @@ export default function EditProduct() {
 // Para que valores adicionados recentemente sejam reconhecidos, não precisa dar um novo build,
 // apenas setar o atributo fallback para true
 // Exemplo: o parâmetro em questão é o nome do produto, foi realizado o build e ainda não
-// existe o produto "mesa", ao acessar a rota product/mesa com fallback definido como false
+// existe o produto "mesa", após isso é adicionado esse produto, ao acessar a rota product/mesa com fallback definido como false
 // vai retornar uma página 404 por esse produto ainda não ter sido adicionado na hora do build
 // com o fallback true, o next consulta a função getStaticProps com o novo parâmetro que ainda não
 // foi gerado a página estática, gerando a partir dai . Detalhe: só a primeira chamada é necessária para as que os demais acessos

@@ -36,7 +36,7 @@ export default function Date() {
             })
             
             if (result.length > 0) {
-                toast('Data indísponivel.')
+                toast('Data indisponível.')
             } else {
                 toast('Data disponível.')
             }
