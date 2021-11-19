@@ -14,6 +14,11 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
+   
+   @media(max-width: 768px){
+       margin: 20px;
+   }
 `;
 
 export const Header = styled.div`
@@ -21,6 +26,7 @@ export const Header = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
     width: 400px;
     margin : 20px 0px;
     padding: 10px;
@@ -42,6 +48,7 @@ export const Header = styled.div`
 `;
 
 export const Input = styled.input`
+    max-width: 100%;
     width: 400px;
     height: 40px;
     border-radius: 4px;
@@ -58,6 +65,7 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.div`
+    max-width: 100%;
     background: #2B2E30;
     color: #fff;
     width: 400px;

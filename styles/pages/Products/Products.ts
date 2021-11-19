@@ -4,16 +4,22 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-
+    max-width: 100%;
+   
+    @media(max-width: 768px){
+        margin: 20px;
+    }
 `;
 
 export const ProductList = styled.ul`
     display: flex;
     flex-direction: column;
+    align-items: center;
+   
+    max-width: 100%;
     list-style: none;
     width: 400px;
-    
+   
 `;
 
 export const Product = styled.li`
@@ -25,6 +31,7 @@ export const Product = styled.li`
     padding: 20px;
     margin-bottom: 10px;
     border-radius: 3px;
+    
     img{
         width: 60px;
         height: 60px;
@@ -77,6 +84,7 @@ export const Header = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
     width: 400px;
     margin : 20px 0px;
     padding: 10px;
