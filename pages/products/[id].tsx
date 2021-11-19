@@ -18,11 +18,11 @@ interface IEditProductProps {
 }
 
 
-// Páginas dinâmicas renderizadas de forma estática
+
 export default function EditProduct() {
     const router = useRouter();
 
-    const [product, setProduct] = useState();
+ 
     const initialInfoState = {
         name: '',
         description: '',
@@ -117,6 +117,8 @@ export default function EditProduct() {
     )
 }
 
+
+// Páginas dinâmicas renderizadas de forma estática
 
 // Para gerar página estática a partir de parâmetros, é necessário carregar na hora do 
 // build os valores ou alguns valores já existentes no banco de dados
