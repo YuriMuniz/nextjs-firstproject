@@ -13,24 +13,23 @@ interface IProduct {
     description: string
 }
 
-interface IEditProductProps {
-    product: IProduct
-}
-
-
+// interface IEditProductProps {
+//     product: IProduct
+// }
 
 export default function EditProduct() {
     const router = useRouter();
 
  
     const initialInfoState = {
+        id: '',
         name: '',
         description: '',
 
     };
 
     const [loading, setLoading] = useState(false);
-    const [newInfo, setNewInfo] = useState(initialInfoState);
+    const [newInfo, setNewInfo] = useState<IProduct>(initialInfoState);
 
     useEffect(() => {
         // if (!router.isReady) {
